@@ -1,0 +1,37 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+@import "partials/colors";
+@import "partials/header";
+@import "partials/layout";
+
+body{
+    font-family: 'Sora', sans-serif;
+    width: 100%;
+    height: 100%;
+    background: rgb(255,174,174);
+    background: linear-gradient(90deg, #ffaeae 0%, #f4c7c7 35%, #ffaeaea1 100%);
+}
+
+button{
+    font-family: 'Sora', sans-serif;
+    cursor: pointer;
+}
+
+svg{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
