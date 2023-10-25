@@ -96,6 +96,11 @@ i{
     align-items: center;
     justify-content: center;
     margin-top: 14px;
+    
+    img{
+        
+        width: 450px;
+    }
 }
 
 .header-button{
@@ -118,12 +123,17 @@ i{
 
     menu{
         text-align: center;
+        width: 100%;
     }
 
     .span{
         width: 5%;
     }
 
+    .span .login{
+      
+        right:25px;
+    }
     .header-content{
         width: 100%;
         flex-direction: column;

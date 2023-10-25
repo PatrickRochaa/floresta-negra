@@ -98,6 +98,9 @@ i {
   justify-content: center;
   margin-top: 14px;
 }
+.header-logo img {
+  width: 450px;
+}
 
 .header-button {
   border: 1px solid #461d1d;
@@ -118,9 +121,13 @@ i {
 @media screen and (max-width: 768px) {
   menu {
     text-align: center;
+    width: 100%;
   }
   .span {
     width: 5%;
+  }
+  .span .login {
+    right: 25px;
   }
   .header-content {
     width: 100%;
