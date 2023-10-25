@@ -275,10 +275,20 @@
     .btn-whatsapp .tooltip-text{
         left: -65px;
     }
+    .footer p{
+        
+        font-size: 18px;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 480px){
     .hero h1{
         font-size: 24px;
+    }
+
+    .footer p{        
+        font-size: 14px;
+        text-align: center;
     }
 }

@@ -9,10 +9,64 @@ header {
   width: 100%;
 }
 
+menu {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: rgba(70, 29, 29, 0.3215686275);
+}
+
+menu a {
+  padding: 10px;
+  font-weight: 600;
+  color: #FFAEAE;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  transition: color 0.5s ease-in-out;
+}
+
+menu a:hover {
+  color: #461d1d;
+}
+
+.span {
+  vertical-align: middle;
+  color: #FFAEAE;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  right: 20px;
+  text-align: end;
+  width: 73%;
+}
+
+.span .login {
+  visibility: hidden;
+  position: absolute;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #461d1d;
+  color: #FFAEAE;
+  opacity: 0;
+  transition: opacity 0.5s;
+  font-size: 15px;
+  font-family: "Sora", sans-serif;
+  margin-left: 10px;
+}
+
+.span:hover .login {
+  visibility: visible;
+  opacity: 1;
+}
+
 .header-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 i {
@@ -61,6 +115,12 @@ i {
 }
 
 @media screen and (max-width: 768px) {
+  menu {
+    text-align: center;
+  }
+  .span {
+    width: 5%;
+  }
   .header-content {
     width: 100%;
     flex-direction: column;
@@ -333,10 +393,18 @@ i {
   .btn-whatsapp .tooltip-text {
     left: -65px;
   }
+  .footer p {
+    font-size: 18px;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 480px) {
   .hero h1 {
     font-size: 24px;
+  }
+  .footer p {
+    font-size: 14px;
+    text-align: center;
   }
 }
 body {
