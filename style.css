@@ -54,7 +54,8 @@ menu a:hover {
   transition: opacity 0.5s;
   font-size: 15px;
   font-family: "Sora", sans-serif;
-  margin-left: 10px;
+  top: 50px;
+  right: -25px;
 }
 
 .span:hover .login {
@@ -117,7 +118,6 @@ i {
 @media screen and (max-width: 768px) {
   menu {
     text-align: center;
-    width: 100%;
   }
   .span {
     width: 5%;
