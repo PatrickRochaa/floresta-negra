@@ -10,7 +10,7 @@ header {
 }
 
 menu {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   margin-top: 20px;
   border-radius: 5px;
@@ -117,6 +117,7 @@ i {
 @media screen and (max-width: 768px) {
   menu {
     text-align: center;
+    width: 100%;
   }
   .span {
     width: 5%;
