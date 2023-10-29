@@ -144,7 +144,7 @@ i {
     margin-top: 40px;
   }
   .header-logo img {
-    width: 400px;
+    width: 380px;
   }
   .header-button {
     display: none;
@@ -396,7 +396,7 @@ i {
     margin-bottom: 14px;
   }
   .footer img {
-    width: 400px;
+    width: 380px;
   }
   .btn-whatsapp img {
     max-width: 64px;
@@ -405,11 +405,11 @@ i {
     left: -65px;
   }
   .footer p {
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
   }
   .footer img {
-    width: 400px;
+    width: 380px;
   }
 }
 @media screen and (max-width: 480px) {
