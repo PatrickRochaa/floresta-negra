@@ -229,8 +229,8 @@ i {
   gap: 14px;
 }
 .about-content img {
-  max-width: 570px;
-  max-height: 900px;
+  max-width: 500px;
+  max-height: 750px;
 }
 
 .about-content div {
