@@ -227,7 +227,7 @@ i {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 10px;
+  padding: 0px auto;
 }
 .about-content img {
   max-width: 500px;
