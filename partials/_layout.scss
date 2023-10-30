@@ -76,7 +76,7 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 14px 64px 14px;
+    padding: 34px 14px 64px 14px;
     img{
         max-width: 530px;
         max-height: 700px;
@@ -251,6 +251,7 @@
     }
     .about-content{
         flex-direction: column;
+        padding: 20px 14px 64px 14px;
     }
 
     .doces{
