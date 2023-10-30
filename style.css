@@ -226,7 +226,8 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
+  gap: 10px;
+  padding: 10px;
 }
 .about-content img {
   max-width: 500px;
