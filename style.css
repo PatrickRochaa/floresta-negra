@@ -231,6 +231,8 @@ i {
 .about-content img {
   max-width: 530px;
   max-height: 700px;
+  display: block;
+  margin: auto;
 }
 
 .about-content div {
