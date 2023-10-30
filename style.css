@@ -229,8 +229,8 @@ i {
   padding: 34px 14px 64px 14px;
 }
 .about-content img {
-  max-width: 570px;
-  max-height: 750px;
+  max-width: 530px;
+  max-height: 700px;
 }
 
 .about-content div {
@@ -242,7 +242,7 @@ i {
   margin-bottom: 24px;
 }
 .about-description p {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   line-height: 150%;
 }
 
