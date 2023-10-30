@@ -388,7 +388,7 @@ i {
   }
   .about-content {
     flex-direction: column;
-    padding: -10px 14px 64px 14px;
+    margin-top: -30px;
   }
   .doces {
     flex-direction: column;
