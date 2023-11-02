@@ -36,9 +36,14 @@ menu a:hover{
     
 }
 
+.largura{
+    display:inline-block;
+    width: 70%;
+    text-align: end;
+    margin-bottom:10px;
+}
 
-
-.span .login{
+a  .textLogin{
     visibility: hidden;
     position: absolute;
     padding: 5px;
@@ -50,11 +55,12 @@ menu a:hover{
     transition: opacity 0.5s;
     font-size: 15px;
     font-family: "Sora", sans-serif;
+    margin-top:10px;
     top:50px;
     right:-25px;
 }
 
-.span:hover .login{
+a:hover .textLogin{
     visibility: visible;
     opacity: 1;   
 }
@@ -126,14 +132,19 @@ i{
         width: 100%;
     }
 
-    .span{
-        width: 5%;
+    .largura{
+        width: 17%;
+        text-align: left;
     }
 
+    a  .textLogin{  
+        right: 20px;
+    }
     .span .login{
         font-size:12px;
         right:-5px;
     }
+
     .header-content{
         width: 100%;
         flex-direction: column;

@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding: 0 auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Sora', sans-serif;
+    background: rgb(255,174,174);
+    background: linear-gradient(90deg, #ffaeae 0%, #f4c7c7 35%, #ffaeaea1 100%);
+}
+
+.container{
+    background-color: #461d1d52;
+    padding: 6px;
+    width: 350px;
+    height: 490px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 ;
+    transition: .5s;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur( 10px );
+    
+}
+
+form{
+    position: absolute;
+    margin-top: 50px;
+    transition: .5s;
+    width: 300px;
+    height: 400px;
+    transition: .5s;
+    overflow-x: visible;
+}
+
+.buttonsForm{
+    margin-top: 25px;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 0 7px 0 #461d1d;/**mudar para $chocolate*/
+}
+
+.buttonsForm button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    padding: 10px 29px;
+    color: #f4c7c7;/**mudar para $second_normal*/
+}
+
+.btnColor{
+    position: absolute;
+    width: 108px;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #461d1d;/**mudar para $chocolate*/   
+    transition: .5s;
+}
+p{
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: -30px;
+    font-weight: 400;
+}
+input[type="text"],input[type="email"],input[type="password"]{
+    border: none;
+    margin-top: 40px;
+    border-radius: 5px;
+    padding: 8px 0 8px 35px;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 40px;
+    background-color: #461d1d;/**mudar para $chocolate*/  
+    color: #f4c7c7;/**mudar para $second_normal*/
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: .5s;
+    overflow-y: hidden;
+
+}
+
+input[type="submit"]:hover{
+    transform: scale(1.1);
+}
+
+a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    width: 100%;
+    height: 40px;
+    background-color:  #f4c7c7;/*mudar para $second_normal*/
+    border: 1px solid #f4c7c7;/*mudar para $second_normal*/
+    border-radius: 5px;
+    color: #461d1d;/**mudar para $chocolate*/  
+    text-decoration: none;
+    margin-top:5px;
+    padding-top:5px;
+    transition: .5s;
+}
+
+a.botao:hover{
+    background-color:  rgba(209, 174, 174, 0.863);
+    color: #5e2b2b;
+    border: 1px solid #5e2b2b;
+}
+
+#email{
+    overflow-y: hidden;
+    overflow-y: hidden;
+}
+.divCheck{
+    margin: 10px 0 0 5px;
+    font-size: 20px;
+    width: 80%;
+}
+
+.termos{
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.termos a{
+    text-decoration: none;
+    color: #0000ff;
+}
+
+.termos a:visited{
+    color: #0000ff;
+}
+
+#signin{
+    left:25px;
+}
+
+#signup{
+    left: 450px;
+}
+
+#signup div{
+    
+    margin-bottom: -10px;
+}
+
+input[type="submit"].cadastro{
+    margin-top: 20px;
+}
+input[type="checkbox"]:checked{
+    accent-color: #461d1d;
+}

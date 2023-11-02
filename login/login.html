@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="login.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <section class="container" id="login">
+        <div class="buttonsForm">
+            <div class="btnColor"></div>
+            <button id="btnSignin">Login</button>
+            <button id="btnSignup">Cadastrar</button>
+        </div>
+
+        <form id="signin">
+           <div>
+                <p>
+                    Digite seu e-mail:
+                </p>
+                <input type="text" name="email" id="ilogin" placeholder="Usuário" required autocomplete="email">
+           </div>
+
+            <div>
+                <p>
+                    Digite sua senha:
+                </p>
+                
+                <input type="password" name="sen" id="isenha" required minlength="8" placeholder="Senha" autocomplete="current-password">
+            </div>
+
+            <div class="divCheck">        
+                <input type="checkbox" id="lembrar" >
+                <label for="lembrar" >Lembrar senha</label>
+            </div>
+
+            <div>
+                <input type="submit" value="Entrar">
+                    <a href="esqueci.html" class="botao">Esqueci a Senha&nbsp;<span id="email" class="material-symbols-outlined">
+                        mail
+                    </span></a>
+            </div>
+        </form>
+        <form id="signup">
+            <div>
+                <p>
+                    Digite seu nome completo:
+                </p>
+                
+                <input type="email" name="email" id="clogin" placeholder="Nome Completo" required autocomplete="name">
+            </div>
+
+            <div>
+                <p>
+                    Digite seu e-mail:
+                </p>
+                <input type="password" name="sen" id="cnome" required minlength="8" placeholder="Email" autocomplete="additional-name">
+    
+            </div>
+         
+            <div>
+                <p>
+                    Digite sua senha:
+                </p>
+                    
+                <input type="password" name="sen" id="csenha" required minlength="8" placeholder="Digite uma senha" autocomplete="current-password">
+            </div>
+
+            <div>
+                <p>
+                    Repita sua senha:
+                </p>
+                <input type="password" name="sen" id="c2senha" required minlength="8" placeholder="Repita a senha" autocomplete="current-password">
+            </div>
+            
+            <div class="termos">
+                <input type="checkbox"  id="aceito">
+                <label for="aceito" class="termos">Eu aceito os
+                    
+                </label><a href="#">Termos e Condições</a>
+            </div>
+            
+            <input type="submit" value="Cadastro" class="cadastro">
+        </form>
+    </section>
+    <script src="login.js"></script>
+</body>
+</html>
