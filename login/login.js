@@ -10,7 +10,6 @@ document.querySelector('#btnSignin')
     formSignup.style.left = "450px"
     btnColor.style.left = "0px"
     container.style.height = "490px"
-    container.style.top = "10px"
     console.log("clicou login")
 })
 
@@ -20,8 +19,7 @@ document.querySelector('#btnSignup')
         formSignin.style.left = "-450px" 
         formSignup.style.left = "25px"
         btnColor.style.left = "110px"
-        container.style.height = "580px"
-        container.style.top = "5px"
+        container.style.height = "600px"
         console.log("clicou cadastro")
 })
 
