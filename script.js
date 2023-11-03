@@ -27,23 +27,30 @@ document.querySelector('#btnSignup')
 })
 
 function iniciaModal (modalID) {
-    const modal =  document.getElementById(modalID);
+    const modal =  document.getElementById(modalID);    
     
-    if(modal) {        
-        modal.classList.add('mostrar');
-        
+    if(modal) {       
+        modal.classList.add('mostrar')
         modal.addEventListener('click', (e) => {
             if(e.target.id == modalID || e.target.className == 'fechar'){
-                modal.classList.remove('mostrar');
-            }     
-            
+                modal.classList.remove('mostrar')
+                document.body.classList.remove('rolagem')
+            }                 
         });
-    }
-    
+    }    
+}
+
+function rolagem (){
+   document.body.classList.add('rolagem')
 }
 
 const logo = document.querySelector('#logar')
-    logo.addEventListener('click',  () =>
-        iniciaModal('modal-promocao'));
+    logo.addEventListener('click',  () => {
+
+        iniciaModal('modal-promocao')
+        rolagem()
+    });
+
+
 
 

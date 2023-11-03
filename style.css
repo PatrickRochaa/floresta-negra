@@ -658,6 +658,10 @@ body {
   background: linear-gradient(90deg, #ffaeae 0%, #f4c7c7 35%, rgba(255, 174, 174, 0.631372549) 100%);
 }
 
+.rolagem {
+  overflow: hidden;
+}
+
 button {
   font-family: "Sora", sans-serif;
   cursor: pointer;
