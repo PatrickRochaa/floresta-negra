@@ -21,7 +21,7 @@ document.querySelector('#btnSignup')
         formSignin.style.left = "-450px" 
         formSignup.style.left = "25px"
         btnColor.style.left = "115px"
-        container.style.height = "620px"
+        container.style.height = "590px"
         container.style.width = "350px"
         console.log("clicou cadastro")
 })
