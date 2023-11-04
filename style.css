@@ -548,7 +548,7 @@ form {
   transition: 0.5s;
 }
 
-p {
+p.loginP {
   font-size: 20px;
   margin-top: 40px;
   margin-bottom: -30px;
@@ -656,12 +656,20 @@ input[type=checkbox]:checked {
   accent-color: #461d1d;
 }
 
+/*Login Footer*/
+.logar {
+  color: #461d1d;
+  font-size: 28px;
+  vertical-align: bottom;
+}
+
+/*Fim Login Footer*/
 /*Mascara Senha*/
 div {
   position: relative;
 }
 
-i {
+.iconSenha {
   position: absolute;
   top: 55%;
   right: 5%;

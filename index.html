@@ -204,11 +204,16 @@
         >
           <i class="fa-brands fa-instagram fa-2x"></i>
         </a>
+
         <a
           href="https://www.facebook.com/profile.php?id=100001849065090"
           target="_blank"
         >
           <i class="fa-brands fa-facebook fa-2x"></i>
+        </a>
+
+        <a href="#" id="logarFooter">
+          <i class="fa-regular fa-user logar"></i>
         </a>
       </div>
 
@@ -253,7 +258,7 @@
         </div>
         <form id="signin">
           <div>
-            <p>Digite seu e-mail:</p>
+            <p class="loginP">Digite seu e-mail:</p>
             <input
               type="text"
               name="email"
@@ -265,7 +270,7 @@
           </div>
 
           <div>
-            <p>Digite sua senha:</p>
+            <p class="loginP">Digite sua senha:</p>
 
             <input
               type="password"
@@ -276,7 +281,11 @@
               placeholder="Senha"
               autocomplete="current-password"
             />
-            <i class="bi bi-eye" id="loginSenha" onclick="loginSenha()"></i>
+            <i
+              class="bi bi-eye iconSenha"
+              id="loginSenha"
+              onclick="loginSenha()"
+            ></i>
           </div>
 
           <div class="divCheck">
@@ -298,7 +307,7 @@
         </form>
         <form id="signup">
           <div>
-            <p>Digite seu nome completo:</p>
+            <p class="loginP">Digite seu nome completo:</p>
 
             <input
               type="email"
@@ -311,7 +320,7 @@
           </div>
 
           <div>
-            <p>Digite seu e-mail:</p>
+            <p class="loginP">Digite seu e-mail:</p>
             <input
               type="password"
               name="sen"
@@ -324,7 +333,7 @@
           </div>
 
           <div>
-            <p>Digite sua senha:</p>
+            <p class="loginP">Digite sua senha:</p>
 
             <input
               type="password"
@@ -336,14 +345,14 @@
               autocomplete="current-password"
             />
             <i
-              class="bi bi-eye"
+              class="bi bi-eye iconSenha"
               id="mostrarSenha"
               onclick="cadastroSenha()"
             ></i>
           </div>
 
           <div>
-            <p>Repita sua senha:</p>
+            <p class="loginP">Repita sua senha:</p>
             <input
               type="password"
               name="sen"
@@ -354,7 +363,7 @@
               autocomplete="current-password"
             />
             <i
-              class="bi bi-eye"
+              class="bi bi-eye iconSenha"
               id="relembrarSenha"
               onclick="relembrarSenha()"
             ></i>
