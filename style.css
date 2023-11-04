@@ -553,6 +553,7 @@ p {
   margin-top: 40px;
   margin-bottom: -30px;
   font-weight: 400;
+  color: #FFAEAE;
 }
 
 input[type=text], input[type=email], input[type=password] {
@@ -563,6 +564,7 @@ input[type=text], input[type=email], input[type=password] {
   outline: none;
   width: 100%;
   height: 40px;
+  font-size: 20px;
 }
 
 input[type=submit] {
@@ -579,6 +581,7 @@ input[type=submit] {
   cursor: pointer;
   transition: 0.5s;
   overflow-y: hidden;
+  font-size: 20px;
 }
 
 input[type=submit]:hover {
@@ -611,19 +614,22 @@ a.botao:hover {
 }
 
 .divCheck {
-  margin: 10px 0 0 5px;
+  margin: 20px 0 0 5px;
   font-size: 20px;
   width: 80%;
+  color: #FFAEAE;
 }
 
 .termos {
   margin-top: 30px;
   font-size: 16px;
+  color: #FFAEAE;
 }
 
 .termos a {
   text-decoration: none;
   color: #0000ff;
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.459);
 }
 
 .termos a:visited {
@@ -650,6 +656,20 @@ input[type=checkbox]:checked {
   accent-color: #461d1d;
 }
 
+/*Mascara Senha*/
+div {
+  position: relative;
+}
+
+i {
+  position: absolute;
+  top: 55%;
+  right: 5%;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/*Fim da mascara Senha*/
 body {
   font-family: "Sora", sans-serif;
   width: 100%;

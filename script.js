@@ -54,3 +54,53 @@ const logo = document.querySelector('#logar')
 
 
 
+//Mostrar senha Login
+
+function loginSenha() {
+    var inputPass = document.querySelector('#isenha')
+    var btnShow = document.querySelector('#loginSenha')
+
+    if(inputPass.type === 'password'){
+        inputPass.setAttribute('type','text')
+        btnShow.classList.replace('bi-eye','bi-eye-slash')
+    } else{
+        inputPass.setAttribute('type','password')
+        btnShow.classList.replace('bi-eye-slash','bi-eye')
+    }
+}
+
+//Fim mostrar senha Login
+
+//Mostrar senha Cadastro
+
+function cadastroSenha() {
+    var inputPass = document.querySelector('#csenha')
+    var btnShow = document.querySelector('#mostrarSenha')
+
+    if(inputPass.type === 'password'){
+        inputPass.setAttribute('type','text')
+        btnShow.classList.replace('bi-eye','bi-eye-slash')
+    } else{
+        inputPass.setAttribute('type','password')
+        btnShow.classList.replace('bi-eye-slash','bi-eye')
+    }
+}
+
+//Fim mostrar senha Cadastro
+
+//Relembrar senha Cadastro
+
+function relembrarSenha() {
+    var inputPass = document.querySelector('#c2senha')
+    var btnShow = document.querySelector('#relembrarSenha')
+
+    if(inputPass.type === 'password'){
+        inputPass.setAttribute('type','text')
+        btnShow.classList.replace('bi-eye','bi-eye-slash')
+    } else{
+        inputPass.setAttribute('type','password')
+        btnShow.classList.replace('bi-eye-slash','bi-eye')
+    }
+}
+
+//Fim Relembrar senha Cadastro
