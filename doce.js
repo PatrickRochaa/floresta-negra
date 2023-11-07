@@ -3,7 +3,7 @@ let doceJson =  [
     {
         id:0, 
         name:'Taças', 
-        img:'imagens/taca.jpg', 
+        img:'imagens/doces/taca.jpg', 
         price:150.00,
        quantidade:0,
        acao:'<a href="#" class="comprou">Comprar</a>'
@@ -12,7 +12,7 @@ let doceJson =  [
     {
         id:1, 
         name:'Ovo de Colher', 
-        img:'imagens/ovo-pascoa.jpg', 
+        img:'imagens/doces/ovo-pascoa.jpg', 
         price:70.00,
         quantidade:0,
         acao:'<a href="#" class="comprou">Comprar</a>'
@@ -21,7 +21,7 @@ let doceJson =  [
     {
         id:2, 
         name:"Doces Finos", 
-        img:"imagens/doces-finos.jpg", 
+        img:"imagens/doces/doces-finos.jpg", 
         price:270.00,
         quantidade:0,
         acao:'<a href="#" class="comprou">Comprar</a>'
@@ -30,9 +30,29 @@ let doceJson =  [
 
     {
         id:3, 
-        name:"Bolos Aniversário", 
-        img:"imagens/bolo.jpg", 
-        price:80.00,
+        name:"Brigadeiro", 
+        img:"imagens/doces/brigadeiros.jpg", 
+        price:120.00,
+        quantidade:0,
+        acao:'<a href="#" class="comprou">Comprar</a>'
+        
+    },
+
+    {
+        id:4, 
+        name:"Bolo", 
+        img:"imagens/doces/bolo.jpg", 
+        price:130.00,
+        quantidade:0,
+        acao:'<a href="#" class="comprou">Comprar</a>'
+        
+    },
+
+    {
+        id:5, 
+        name:"Barra Recheada", 
+        img:"imagens/doces/barra-chocolate.jpg", 
+        price:130.00,
         quantidade:0,
         acao:'<a href="#" class="comprou">Comprar</a>'
         

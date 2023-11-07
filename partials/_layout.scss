@@ -172,7 +172,6 @@
     z-index:1;
 }
 
-
 .doce .comprou:hover a{
     background-color: $houver-comprar;
     transform: scale(1.02);
@@ -204,9 +203,8 @@
 }
 
 .teste{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 16px;
         padding: 0 44px 34px 44px;
 }
@@ -311,7 +309,8 @@
         }
     }
     .teste{
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
     .doce{
         margin-bottom: 14px;

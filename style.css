@@ -366,9 +366,8 @@ i {
 }
 
 .teste {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   padding: 0 44px 34px 44px;
 }
@@ -463,7 +462,8 @@ i {
     font-size: 13px;
   }
   .teste {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
   .doce {
     margin-bottom: 14px;
