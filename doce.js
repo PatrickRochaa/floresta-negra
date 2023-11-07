@@ -52,7 +52,7 @@ let doceJson =  [
         id:5, 
         name:"Barra Recheada", 
         img:"imagens/doces/barra-chocolate.jpg", 
-        price:130.00,
+        price:45.00,
         quantidade:0,
         acao:'<a href="#" class="comprou">Comprar</a>'
         
