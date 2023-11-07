@@ -142,7 +142,7 @@
     <!--Fim Sobre-->
 
     <!--Inicio Doces-->
-    <section class="services">
+    <section class="services" id="doces-container">
       <div
         class="services-content container"
         data-aos="fade-up"
@@ -151,26 +151,18 @@
         <h2>doces</h2>
       </div>
 
-      <section class="doces">
-        <div class="doce" data-aos="fade-up" data-aos-delay="200">
-          <img src="imagens/taca.jpg" alt="taça de doce" />
-          <div class="doce-info">
-            <strong>Taças</strong>
-          </div>
-        </div>
-        <div class="doce" data-aos="fade-up" data-aos-delay="300">
-          <img src="imagens/ovo-pascoa.jpg" alt="ovo de pascoa" />
-          <div class="doce-info">
-            <strong>Ovo de Páscoa </strong>
-          </div>
-        </div>
-        <div class="doce" data-aos="fade-up" data-aos-delay="350">
-          <img src="imagens/doces-finos.jpg" alt="doce finos" />
-          <div class="doce-info">
-            <strong>Doces Finos</strong>
+      <section class="doces base">       
+          <div class="doce" data-aos="fade-up" data-aos-delay="200">
+            <div class="doce-item--img"><img src="" /></div>
+            <div class="doce-info">
+              <h3 class="doce-item--name"></h3>
+              <span class="doce-item--price"></span>
+            </div>
+            <a href="#" class="comprou"></a>
           </div>
         </div>
       </section>
+      <section class="teste"></section>
     </section>
 
     <!--Fim Doces-->
@@ -381,6 +373,7 @@
     </div>
 
     <!--Fim Login -->
+    <script src="doce.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

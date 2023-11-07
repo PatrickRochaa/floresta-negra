@@ -132,10 +132,15 @@
     padding: 0 44px 34px 44px;
 }
 
+.doces.base{
+    display:none;
+}
+
 .doce{
     flex:1;
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: $white;
     border-radius: 8px;
     box-shadow: 0px -1px 17px -4px rgba(0,0,0, 0.45);
@@ -147,23 +152,64 @@
         width: 100%;
         max-width: 354px;
     }
-}
 
+    .comprou{
+        
+        color: $white;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 15px;
+        transition: .5s;
+        text-transform: uppercase;
+        background-color:$backgoud-comprar;
+        
+    }
+
+}
 .doce img:hover{
     transform: scale(1.2);
     z-index:1;
 }
 
+
+.doce .comprou:hover a{
+    background-color: $houver-comprar;
+    transform: scale(1.02);
+}
+
+.comprou:hover {
+    background-color: $houver-comprar;
+    transform: scale(1.02);
+}
+
 .doce-info{
     width: 100%;
     padding: 14px;
+    font-size: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: $white;
     z-index: 99;
+
+    span{
+        font-size:15px;
+        background-color: $red;
+        color: $white;
+        border-radius: 5px;
+        padding: 5px;
+    }
+   
 }
 
+.teste{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        padding: 0 44px 34px 44px;
+}
 
 .footer{
     display: flex;
@@ -257,7 +303,9 @@
     .doces{
         flex-direction: column;
     }
-
+    .teste{
+        flex-direction: column;
+    }
     .doce{
         margin-bottom: 14px;
     }
