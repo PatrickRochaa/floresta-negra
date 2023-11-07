@@ -456,6 +456,12 @@ i {
   .doces {
     flex-direction: column;
   }
+  .doce-info {
+    font-size: 17px;
+  }
+  .doce-info span {
+    font-size: 13px;
+  }
   .teste {
     flex-direction: column;
   }
