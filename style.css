@@ -457,10 +457,10 @@ i {
     flex-direction: column;
   }
   .doce-info {
-    font-size: 17px;
+    font-size: 15px;
   }
   .doce-info span {
-    font-size: 13px;
+    font-size: 10px;
   }
   .teste {
     flex-direction: column;
