@@ -44,19 +44,14 @@ menu a:hover {
   font-weight: 600;
   cursor: pointer;
   right: 20px;
-  text-align: end;
-  width: 73%;
-}
-
-.span:hover {
-  text-shadow: 0px 0px 2px #461d1d;
+  text-align: center;
 }
 
 .largura {
-  display: inline-block;
-  width: 70%;
-  text-align: end;
-  margin-bottom: 10px;
+  position: absolute;
+  right: 60px;
+  top: 0px;
+  text-align: center;
 }
 
 a .textLogin {
@@ -72,8 +67,9 @@ a .textLogin {
   font-size: 15px;
   font-family: "Sora", sans-serif;
   margin-top: 10px;
-  top: 50px;
-  right: -25px;
+  top: 55px;
+  right: -50px;
+  width: 160px;
 }
 
 a:hover .textLogin {
@@ -98,7 +94,7 @@ i {
 }
 
 .header-icons a:hover i {
-  color: #461d1d;
+  color: red;
   animation: translateY 0.8s infinite alternate;
 }
 
@@ -138,15 +134,15 @@ i {
 
 @media screen and (max-width: 768px) {
   menu {
-    text-align: center;
     width: 100%;
+    display: flex;
   }
   .largura {
-    width: 17%;
-    text-align: left;
+    right: 5px;
   }
   a .textLogin {
-    right: 20px;
+    right: -10px;
+    top: 65px;
   }
   .span .login {
     font-size: 12px;
@@ -187,7 +183,7 @@ i {
   content: "";
   display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, rgba(255, 174, 174, 0.1), #F4C7C7), url("../imagens/doces.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 174, 174, 0.1), #f4c7c7), url("../imagens/doces.png");
   left: 0;
   top: 0;
   width: 100%;
@@ -239,7 +235,7 @@ i {
   }
 }
 .about {
-  background-color: #F4C7C7;
+  background-color: #f4c7c7;
   overflow: hidden;
   color: #461d1d;
 }
@@ -331,6 +327,9 @@ i {
   text-transform: uppercase;
   background-color: rgb(109, 180, 3);
 }
+.doce span.doce-item--qtd {
+  display: none;
+}
 
 .doce img:hover {
   transform: scale(1.2);
@@ -365,7 +364,7 @@ i {
   padding: 5px;
 }
 
-.teste {
+.lista-doce {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
@@ -461,7 +460,7 @@ i {
   .doce-info span {
     font-size: 13px;
   }
-  .teste {
+  .lista-doce {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
