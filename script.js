@@ -1,29 +1,21 @@
 AOS.init();
+// scroll suave no link interno
+function initScrollSuave() {
+  const linksInternos = document.querySelectorAll('.a[href^="#"]');
 
-// //carrinho header
+  function scrollToSection(event) {
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute("href");
+    const section = document.querySelector(href);
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
 
-// function initModalHeader() {
-//   const cartBtn = document.querySelector(".cart");
-//   const cartModal = document.getElementById("cart-modal");
-//   const closeModalBtn = document.getElementById("close-modal-btn");
+  linksInternos.forEach((link) => {
+    link.addEventListener("click", scrollToSection);
+  });
+}
 
-//   //abrindo Modal do carrinho
-//   cartBtn.addEventListener("click", function () {
-//     cartModal.style.display = "flex";
-//   });
-
-//   //fechar Modal do carrinho clicando fora do Modal
-//   cartModal.addEventListener("click", function (event) {
-//     if (event.target === cartModal) {
-//       cartModal.style.display = "none";
-//     }
-//   });
-
-//   //fechar Modal do carrinho clicando fno botao fechar
-//   closeModalBtn.addEventListener("click", function () {
-//     cartModal.style.display = "none";
-//   });
-// }
-
-// //chamando funçao para abrir o modal
-// initModalHeader();
+initScrollSuave(); // chamando funçao scroll suave

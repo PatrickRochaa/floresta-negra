@@ -21,6 +21,10 @@ body {
   background: linear-gradient(90deg, #ffaeae 0%, #f4c7c7 35%, #ffaeaea1 100%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .rolagem {
   overflow: hidden;
 }
