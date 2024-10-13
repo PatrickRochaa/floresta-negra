@@ -1,0 +1,239 @@
+/*Modal carrinho*/
+.btn-cart {
+  position: fixed;
+  bottom: 14px;
+  right: 20px;
+  z-index: 99;
+  width: 60px;
+  height: 60px;
+  background-color: $chocolate;
+  border-radius: 50%;
+  border: none;
+}
+
+.btn-cart i {
+  color: $second_normal;
+  font-size: 23px;
+}
+
+.btn-cart .tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  padding: 5px;
+  width: 143px;
+  top: -40px;
+  left: -50px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: $chocolate;
+  color: $primary_normal;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.btn-cart:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cartQtd {
+  color: $white;
+  font-weight: bold;
+  font-size: 15px;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+/*Container Modal*/
+.containerModal {
+  background-color: rgb(0 0 0 / 0.9);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.cartModal {
+  background-color: rgb(255 255 255);
+  padding: 1.25rem;
+  border-radius: 0.375rem /* 6px */;
+  min-width: 600px;
+
+  h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem /* 24px */;
+    line-height: 2rem /* 32px */;
+    margin-bottom: 0.5rem /* 8px */;
+  }
+
+  form {
+    margin-bottom: 10px;
+    position: relative;
+    display: none;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    button:first-child {
+      background-color: $red;
+      color: $white;
+    }
+  }
+}
+
+.itemsAdd {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem /* 8px */;
+  flex-direction: column;
+}
+
+.total {
+  font-weight: 700;
+}
+
+.endereco {
+  font-weight: 700;
+  margin-top: 1rem /* 16px */;
+  margin-bottom: 10px;
+}
+
+.address {
+  width: 100%;
+  padding: 5px;
+  font-size: 15px;
+  height: 40px;
+  border-width: 2px;
+  border: 1px solid black;
+  text-transform: uppercase;
+  border-radius: 0.25rem /* 4px */;
+}
+
+.address-warn,
+.number-warn,
+.name-warn {
+  background-color: rgb(239 68 68);
+  color: rgb(255 255 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem /* 4px */;
+  margin-top: 0.5rem /* 8px */;
+  margin-bottom: 0.5rem /* 8px */;
+  display: none;
+}
+
+.cartPedido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.25rem /* 20px */;
+  width: 100%;
+}
+
+.close-modal-btn {
+  background-color: transparent;
+  color: red;
+  border-radius: 0.25rem /* 4px */;
+  padding: 15px 15px;
+  font-size: 15px;
+  border: none;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+}
+
+.close-modal-btn:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.checkout-btn,
+.addres-btn {
+  background-color: rgb(22 163 74);
+  color: rgb(255 255 255);
+  border-radius: 0.25rem /* 4px */;
+  padding: 15px 15px;
+  font-size: 15px;
+  border: none;
+  text-transform: uppercase;
+}
+
+.cart-btn {
+  display: flex;
+  height: 50px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem /* 8px */;
+  color: rgb(255 255 255);
+  font-weight: 700;
+  width: 50%;
+  background-color: transparent;
+  outline: none;
+}
+
+.cart-btn i {
+  color: white;
+}
+
+/*Produtos adicionado ao carrinho*/
+
+.cartContainer {
+  display: flex;
+  gap: 10px;
+  padding: 20px 0px;
+  border-bottom: 2px solid gray;
+  margin-bottom: 5px;
+}
+
+.cartContainer img {
+  width: 70px;
+  height: 80px;
+}
+
+/*Container para ajustar layout das informaçoes*/
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+/*Quantidade*/
+.btnQtd {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.btnQtd button {
+  padding: 10px 18px;
+  border-radius: 0.25rem /* 4px */;
+  font-size: 15px;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: red;
+}
+
+.btnQtd button:last-child {
+  background-color: rgb(22 163 74);
+}
+
+@media screen and (max-width: 768px) {
+  .cartModal {
+    min-width: 90%;
+  }
+}

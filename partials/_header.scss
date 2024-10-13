@@ -4,6 +4,8 @@ header {
 
 menu {
   width: 80%;
+  display: flex;
+  justify-items: center;
   padding: 10px;
   margin-top: 20px;
   border-radius: 5px;
@@ -14,7 +16,8 @@ menu {
 
 menu a {
   display: inline-block;
-  padding: 10px;
+  padding: 5px;
+  font-size: 20px;
   font-weight: 600;
   color: $primary_normal;
   margin-bottom: 10px;
@@ -25,49 +28,28 @@ menu a {
 
 menu a:hover {
   color: $chocolate;
-  font-weight: 900;
+  font-weight: 700;
   text-shadow: 0px 0px 2px $primary_normal;
 }
 
-.span {
-  vertical-align: middle;
-  color: $primary_normal;
-  padding: 10px;
-  font-size: 25px;
-  font-weight: 600;
-  cursor: pointer;
-  right: 20px;
-  text-align: center;
-}
-
-.largura {
+.carrinho {
   position: absolute;
-  right: 60px;
-  top: 0px;
-  text-align: center;
+  right: 70px;
 }
 
-a .textLogin {
-  visibility: hidden;
+.cart {
   position: absolute;
-  padding: 5px;
-  text-align: center;
-  border-radius: 5px;
-  background-color: $chocolate;
-  color: $primary_normal;
-  opacity: 0;
-  transition: opacity 0.5s;
-  font-size: 15px;
-  font-family: "Sora", sans-serif;
-  margin-top: 10px;
-  top: 55px;
-  right: -50px;
-  width: 160px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  color: $chocolate;
+  text-shadow: 0px 0px 0px transparent;
 }
 
-a:hover .textLogin {
-  visibility: visible;
-  opacity: 1;
+.count {
+  position: relative;
+  top: -20px;
+  left: 20px;
 }
 
 .header-content {
@@ -75,31 +57,6 @@ a:hover .textLogin {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-i {
-  color: $chocolate;
-}
-
-.header-icons {
-  display: flex;
-  gap: 14px;
-}
-
-.header-icons a:hover {
-  i {
-    color: $red;
-    animation: translateY 0.8s infinite alternate;
-  }
-}
-
-@keyframes translateY {
-  from {
-    transform: translateY(0) scale(1);
-  }
-  to {
-    transform: translateY(-8px) scale(1.1);
-  }
 }
 
 .header-logo {
@@ -129,23 +86,17 @@ i {
   color: $primary_normal;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   menu {
     width: 100%;
     display: flex;
+    justify-content: center;
   }
+}
 
+@media screen and (max-width: 768px) {
   .largura {
     right: 5px;
-  }
-
-  a .textLogin {
-    right: -10px;
-    top: 65px;
-  }
-  .span .login {
-    font-size: 12px;
-    right: -5px;
   }
 
   .header-content {
@@ -153,12 +104,8 @@ i {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    i {
-      margin-top: 30px;
-      font-size: 34px;
-    }
   }
+
   .header-logo {
     width: 55%;
     margin-top: 40px;

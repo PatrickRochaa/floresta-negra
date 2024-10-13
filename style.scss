@@ -1,49 +1,55 @@
 * {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
 }
 
 @import "partials/colors";
 @import "partials/header";
 @import "partials/layout";
-@import "partials/login";
+@import "partials/about";
+@import "partials/products";
+@import "partials/footer.scss";
+@import "partials/carrinho";
 
-body{
-    font-family: 'Sora', sans-serif;
-    width: 100%;
-    height: 100%;
-    background: rgb(255,174,174);
-    background: linear-gradient(90deg, #ffaeae 0%, #f4c7c7 35%, #ffaeaea1 100%);    
+body {
+  font-family: "Sora", sans-serif;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 174, 174);
+  background: linear-gradient(90deg, #ffaeae 0%, #f4c7c7 35%, #ffaeaea1 100%);
 }
 
-.rolagem{
-    overflow: hidden;
+.rolagem {
+  overflow: hidden;
 }
 
-button{
-    font-family: 'Sora', sans-serif;
-    cursor: pointer;
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 8px;
 }
 
-svg{
-    width: 100%;
+button {
+  font-family: "Sora", sans-serif;
+  cursor: pointer;
 }
 
-img{
-    width: 100%;
+svg {
+  width: 100%;
 }
 
-a{
-    cursor: pointer;
-    text-decoration: none;
+img {
+  width: 100%;
 }
 
-.nada{
-    overflow: auto;
+a {
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.nada.rolagem{
-    overflow: hidden;
+i {
+  color: $chocolate;
+  font-size: 15px;
 }

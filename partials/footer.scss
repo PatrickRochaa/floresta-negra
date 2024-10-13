@@ -1,0 +1,51 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 0;
+  gap: 24px;
+}
+
+.footer-icons {
+  width: 100%;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-icons i {
+  font-size: 35px;
+}
+
+.footer-icons a:hover {
+  i {
+    color: $chocolate;
+    animation: translateY 0.8s infinite alternate;
+  }
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+
+footer img {
+  width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  footer img {
+    width: 380px;
+  }
+
+  footer p {
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+  }
+}

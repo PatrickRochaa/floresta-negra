@@ -1,0 +1,40 @@
+.about {
+  background-color: #f4c7c7;
+  overflow: hidden;
+  color: $chocolate;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 34px 14px 64px 14px;
+  img {
+    max-width: 530px;
+    max-height: 700px;
+    display: block;
+    margin: auto;
+  }
+}
+
+.about-content div {
+  flex: 1;
+}
+
+.about-description {
+  h2 {
+    font-size: 38px;
+    margin-bottom: 24px;
+  }
+  p {
+    margin-bottom: 30px;
+    line-height: 150%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    margin-top: -70px;
+  }
+}

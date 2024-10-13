@@ -1,0 +1,132 @@
+.services {
+  background-color: $white;
+  color: $chocolate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 14px;
+}
+
+.services-content h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 14px;
+}
+
+.services-content p {
+  max-width: 780px;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.doces {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 0 44px 34px 44px;
+}
+
+.doces.base {
+  display: none;
+}
+
+.doce {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+  border-radius: 8px;
+  box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+
+  overflow: hidden;
+
+  img {
+    transition: transform 0.2s;
+    width: 100%;
+    max-width: 354px;
+  }
+
+  .comprou {
+    color: $white;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 15px;
+    transition: 0.5s;
+    text-transform: uppercase;
+    background-color: $backgoud-comprar;
+    border: none;
+  }
+
+  span.doce-item--qtd {
+    display: none;
+  }
+}
+.doce img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.doce .comprou:hover {
+  background-color: $houver-comprar;
+  transform: scale(1.02);
+}
+
+.doce-info {
+  width: 100%;
+  height: 100px;
+  padding: 14px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $white;
+  z-index: 99;
+
+  span {
+    font-size: 12px;
+    background-color: $red;
+    color: $white;
+    border-radius: 5px;
+    padding: 5px;
+  }
+}
+
+.lista-doce {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 0 44px 34px 44px;
+}
+
+@media screen and (max-width: 1000px) {
+  .lista-doce {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .doces {
+    flex-direction: column;
+  }
+  .doce-info {
+    font-size: 15px;
+
+    span {
+      font-size: 13px;
+    }
+  }
+  .lista-doce {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .doce {
+    margin-bottom: 14px;
+  }
+}

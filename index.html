@@ -22,8 +22,10 @@
       href="imagens/favicon-16x16.png"
     />
 
+    <!--Efeito ao rolar a pagina-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+    <!--Fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,6 +33,7 @@
       rel="stylesheet"
     />
 
+    <!--Icone font Awesome-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -39,17 +42,15 @@
       referrerpolicy="no-referrer"
     />
 
+    <!--Icone Google-->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
-
     <link rel="stylesheet" href="style.css" />
+
+    <!--Script do efeito de rolagem-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Floresta Negra</title>
   </head>
@@ -63,16 +64,14 @@
             <a href="#">Doces </a>
             <a href="#">Contato </a>
 
-            <!-- botao para link
-                 <span class="material-symbols-outlined span">
-                    person  
-                    <a href="#" class="login">Entrar / Cadastrar</a></span>
-                     -->
+            <!--Icone carrinho-->
 
-            <a href="#" class="largura" id="logar">
-              <span class="material-symbols-outlined span"> person </span
-              ><span class="textLogin">Entrar / Cadastro</span></a
-            >
+            <!-- <div class="carrinho">
+              <a href="#" class="cart">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+                <span class="count"></span>
+              </a>
+            </div> -->
           </menu>
 
           <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
@@ -151,18 +150,19 @@
         <h2>doces</h2>
       </div>
 
-      <section class="doces base">       
-          <div class="doce" data-aos="fade-up" data-aos-delay="200">
-            <div class="doce-item--img"><img src="" /></div>
-            <div class="doce-info">
-              <h3 class="doce-item--name"></h3>
-              <span class="doce-item--price"></span>
-            </div>
-            <a href="#" class="comprou"></a>
+      <!--lista que vai ser clonadao para o arry de doces-->
+      <section class="doces base">
+        <div class="doce" data-aos="fade-up" data-aos-delay="200">
+          <img class="doce-item--img" src="" />
+          <div class="doce-info">
+            <h3 class="doce-item--name"></h3>
+            <span class="doce-item--price"></span>
           </div>
+          <button class="comprou"></button>
         </div>
       </section>
-      <section class="lista-doce "></section>
+      <!--lista onde vai ser adicionado o arry de doces-->
+      <section class="lista-doce"></section>
     </section>
 
     <!--Fim Doces-->
@@ -184,10 +184,6 @@
     >
     </iframe>
 
-    <!--Fim Mapa -->
-
-    <!--Inicio Footer -->
-
     <footer class="footer" data-aos="zoom-in" data-aos-delay="650">
       <div class="footer-icons">
         <a
@@ -204,8 +200,11 @@
           <i class="fa-brands fa-facebook fa-2x"></i>
         </a>
 
-        <a href="#" id="logarFooter">
-          <i class="fa-regular fa-user logar"></i>
+        <a
+          href="https://api.whatsapp.com/send?phone=5531987635707&text=Quero%20fazer%20um%20pedido!"
+          target="_blank"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
         </a>
       </div>
 
@@ -216,163 +215,76 @@
         />
       </div>
 
-      <p>
-        Copyright 2023&copy; | Floresta Negra Confeitaria - Todos direitos
-        reservados.
-      </p>
+      <p>Floresta Negra Confeitaria - Todos direitos reservados.</p>
     </footer>
 
-    <!--Fim Footer -->
-
-    <!-- Button Whatsapp -->
-
-    <a
-      href="https://api.whatsapp.com/send?phone=5531987635707&text=Quero%20fazer%20um%20pedido!"
-      class="btn-whatsapp"
-      target="_blank"
+    <!--Button Cart Footer-->
+    <button
+      id="cart-btn"
+      class="btn-cart"
       data-aos="zoom-in-up"
       data-aos-delay="400"
     >
-      <img src="imagens/whatssapp.svg" alt="Botao whatsapp" />
-      <span class="tooltip-text">Faça seu Pedido</span>
-    </a>
-    <!--Fim Button Whatsapp -->
+      <i class="fa fa-cart-plus text-lg text-white"></i>
+      <span class="tooltip-text">Meu Carrinho</span>
+      <span class="cartQtd"></span>
+    </button>
 
-    <!--Inicio Login-->
+    <!--Inicio Modal Cart-->
+    <div class="containerModal" id="cart-modal">
+      <div class="cartModal">
+        <h2 class="">Meu Carrinho</h2>
+        <div id="cart-items" class="itemsAdd"></div>
 
-    <div class="modal-container" id="modal-promocao">
-      <div class="modal">
-        <button class="fechar">X</button>
-        <div class="buttonsForm">
-          <div class="btnColor"></div>
-          <button id="btnSignin">Login</button>
-          <button id="btnSignup">Cadastrar</button>
+        <p class="total">Total <span id="cart-total">0.00</span></p>
+
+        <div class="cartPedido">
+          <button class="close-modal-btn" id="close-modal-btn">Fechar</button>
+          <button class="checkout-btn" id="checkout-btn" disabled>
+            Enviar Endereço
+          </button>
         </div>
-        <form id="signin">
-          <div>
-            <p class="loginP">Digite seu e-mail:</p>
-            <input
-              type="text"
-              name="email"
-              id="ilogin"
-              placeholder="Usuário"
-              required
-              autocomplete="email"
-            />
+
+        <!-- Formulário escondido inicialmente -->
+        <form id="checkout-form">
+          <p class="endereco">Nome</p>
+          <input
+            type="text"
+            placeholder="Informe seu nome"
+            class="address"
+            id="name"
+          />
+          <p class="name-warn" id="name-warn">INFORME SEU NOME</p>
+
+          <p class="endereco">Endereço de Entrega</p>
+          <input
+            type="text"
+            placeholder="Informe seu endereço"
+            class="address"
+            id="address"
+          />
+          <p class="address-warn" id="address-warn">INFORME SEU ENDEREÇO</p>
+
+          <p class="endereco">Número da Residência</p>
+          <input
+            type="text"
+            placeholder="Ex: N°: 412 ou Apartamento 804 – Bloco X"
+            class="address"
+            id="number"
+          />
+          <p class="number-warn" id="number-warn">
+            INFORME O NÚMERO DA RESIDÊNCIA
+          </p>
+
+          <div class="">
+            <button class="close-modal-btn" id="back-to-cart">Carrinho</button>
+            <button class="addres-btn" id="addres-btn">Finalizar Pedido</button>
           </div>
-
-          <div>
-            <p class="loginP">Digite sua senha:</p>
-
-            <input
-              type="password"
-              name="sen"
-              id="isenha"
-              required
-              minlength="8"
-              placeholder="Senha"
-              autocomplete="current-password"
-            />
-            <i
-              class="bi bi-eye iconSenha"
-              id="loginSenha"
-              onclick="loginSenha()"
-            ></i>
-          </div>
-
-          <div class="divCheck">
-            <input type="checkbox" id="lembrar" />
-            <label for="lembrar">Lembrar senha</label>
-          </div>
-
-          <div>
-            <input type="submit" value="Entrar" />
-            <a href="#" class="botao"
-              >Esqueci a Senha&nbsp;<span
-                id="email"
-                class="material-symbols-outlined"
-              >
-                mail
-              </span></a
-            >
-          </div>
-        </form>
-        <form id="signup">
-          <div>
-            <p class="loginP">Digite seu nome completo:</p>
-
-            <input
-              type="email"
-              name="email"
-              id="clogin"
-              placeholder="Nome Completo"
-              required
-              autocomplete="name"
-            />
-          </div>
-
-          <div>
-            <p class="loginP">Digite seu e-mail:</p>
-            <input
-              type="password"
-              name="sen"
-              id="cnome"
-              required
-              minlength="8"
-              placeholder="Email"
-              autocomplete="additional-name"
-            />
-          </div>
-
-          <div>
-            <p class="loginP">Digite sua senha:</p>
-
-            <input
-              type="password"
-              name="sen"
-              id="csenha"
-              required
-              minlength="8"
-              placeholder="Digite uma senha"
-              autocomplete="current-password"
-            />
-            <i
-              class="bi bi-eye iconSenha"
-              id="mostrarSenha"
-              onclick="cadastroSenha()"
-            ></i>
-          </div>
-
-          <div>
-            <p class="loginP">Repita sua senha:</p>
-            <input
-              type="password"
-              name="sen"
-              id="c2senha"
-              required
-              minlength="8"
-              placeholder="Repita a senha"
-              autocomplete="current-password"
-            />
-            <i
-              class="bi bi-eye iconSenha"
-              id="relembrarSenha"
-              onclick="relembrarSenha()"
-            ></i>
-          </div>
-
-          <div class="termos">
-            <input type="checkbox" id="aceito" />
-            <label for="aceito" class="termos">Eu aceito os </label
-            ><a href="#">Termos e Condições</a>
-          </div>
-
-          <input type="submit" value="Cadastro" class="cadastro" />
         </form>
       </div>
     </div>
+    <!--Fim Modal Cart-->
 
-    <!--Fim Login -->
     <script src="doce.js"></script>
     <script src="script.js"></script>
   </body>
