@@ -89,6 +89,18 @@ function addItem(event) {
   if (temItem) {
     temItem.qtdProduct += 1; // Aumenta a quantidade
   } else {
+    Toastify({
+      text: "Adicionado ao carrinho!",
+      duration: 5000,
+      close: true,
+      gravity: "top", // `top` or `bottom`
+      position: "right", // `left`, `center` or `right`
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      style: {
+        background: " #461d1d",
+        color: "#F4C7C7",
+      },
+    }).showToast();
     cartList.push({
       nameProduct,
       imgProduct,
@@ -153,6 +165,18 @@ function removeItem(nameProduct) {
   if (temItem) {
     temItem.qtdProduct -= 1;
     if (temItem.qtdProduct < 1) {
+      Toastify({
+        text: "Removido do carrinho!",
+        duration: 5000,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: " #461d1d",
+          color: "#F4C7C7",
+        },
+      }).showToast();
       cartList = cartList.filter((item) => item.nameProduct !== nameProduct);
     }
   }
@@ -292,6 +316,19 @@ function clearFormAndCart() {
   cartItems.style.display = "block";
   cartPedido.style.display = "flex"; // Ajustar para o estilo necessário
   checkoutForm.style.display = "none";
+
+  Toastify({
+    text: "Pedido encaminhado!",
+    duration: 5000,
+    close: true,
+    gravity: "top", // `top` or `bottom`
+    position: "right", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: " #461d1d",
+      color: "#F4C7C7",
+    },
+  }).showToast();
 }
 
 // Função para validar os campos do formulário
