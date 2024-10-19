@@ -377,7 +377,7 @@ menu a:hover {
 }
 .doce-info span {
   font-size: 12px;
-  background-color: #461d1d;
+  background-color: red;
   color: #fff;
   border-radius: 5px;
   padding: 5px;
