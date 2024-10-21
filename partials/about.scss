@@ -9,6 +9,8 @@
   align-items: center;
   justify-content: center;
   padding: 34px 14px 64px 14px;
+
+  width: 80%;
   img {
     max-width: 530px;
     max-height: 700px;
@@ -36,5 +38,19 @@
   .about-content {
     flex-direction: column;
     margin-top: -70px;
+    width: 100%;
+  }
+  .about-description {
+    h2 {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-content {
+    flex-direction: column;
+    margin-top: -70px;
+    width: 90%;
   }
 }

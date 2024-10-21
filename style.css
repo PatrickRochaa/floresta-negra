@@ -261,6 +261,7 @@ menu a:hover {
   align-items: center;
   justify-content: center;
   padding: 34px 14px 64px 14px;
+  width: 80%;
 }
 .about-content img {
   max-width: 530px;
@@ -286,6 +287,17 @@ menu a:hover {
   .about-content {
     flex-direction: column;
     margin-top: -70px;
+    width: 100%;
+  }
+  .about-description h2 {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .about-content {
+    flex-direction: column;
+    margin-top: -70px;
+    width: 90%;
   }
 }
 .services {
@@ -728,7 +740,7 @@ svg {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 a {
